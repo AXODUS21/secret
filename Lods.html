@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lods baka naman</title>
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+    <div class="question">
+      <span class="heart">
+          &#x2665;
+      </span>
+
+      <span id="question">
+        Can I court you?
+      </span>
+
+      <span class="heart">
+        &#x2665;
+    </span>
+    </div>
+
+    <div class="answer">
+      <button id="yes">
+        YES
+      </button>
+      <button id="no">
+        NO
+      </button>
+    </div>
+
+    <div id="trippings">
+    </div>
+
+    <div id="tulip">
+      <img class="tulep"src="css/tulep.png">
+    </div>
+
+    <div class="gif">
+      <span>
+        <img id="bear1" src="https://media.giphy.com/media/DyQrKMpqkAhNHZ1iWe/giphy.gif">
+      </span>
+      <span>
+        <img id="bear2" src="https://media.giphy.com/media/DyQrKMpqkAhNHZ1iWe/giphy.gif">
+      </span>
+    </div>
+
+
+    <script>
+      const text = document.getElementById("question");
+      const yesBtn = document.getElementById("yes");
+      const noBtn = document.getElementById("no");
+      const pangasar =  document.getElementById("trippings");
+      const kuma1= document.getElementById("bear1");
+      const kuma2 = document.getElementById("bear2");
+      const tulep = document.getElementById("tulip");
+
+
+      noBtn.addEventListener("click", () => {
+        noBtn.innerHTML = "YES"
+        
+        kuma1.style.opacity = '1';
+        kuma2.style.opacity = '1';
+        tulep.style.opacity = '1';
+      });
+      noBtn.addEventListener("click", () => {
+        question.innerHTML= "YEYY I LOVE YOU"
+        noBtn.style.backgroundColor = "purple"
+        pangasar.innerText = 'ulul bawal mag no ako batas dito ako gumawa eh HAHHAHAH';
+      });
+      yesBtn.addEventListener("click",() => {
+        question.innerHTML= "YEYY I LOVE YOU";
+
+        kuma1.style.opacity = '1';
+        kuma2.style.opacity = '1';
+        tulep.style.opacity = '1';
+      });
+    </script>
+  </body>
+</html>
